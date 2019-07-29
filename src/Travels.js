@@ -35,11 +35,11 @@ const travels = [
         destination : "Riga"
   }
 ];
-
+var i = 0;
 const Travels = () => (
   <div>
     {travels.map(travel => (
-        <Travel country={travel.country} photo={travel.photo} destination={travel.destination} distance={travel.distance} />
+        <Travel key={i++} country={travel.country} photo={travel.photo} destination={travel.destination} distance={travel.distance} />
       )
     )}
   </div>

@@ -8,7 +8,7 @@ const Travel = ({ destination, country, photo, distance }) => (
   <figure>
     <img src={photo} alt={destination}   style= {{width : '800px'}} / >
     <figcaption>
-      <desti>{destination} - {country} -  {distance}  </desti>
+      <p>{destination} - {country} -  {distance}  </p>
     </figcaption>
   </figure>
 );
